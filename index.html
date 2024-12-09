@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel преобразуем в массив</title>
+<style>
+    body {
+        font-size: 20px;
+    }
+    .wrapper {
+        height: 400px;
+        width: 500px;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        height: 60px;
+    }
+    button {
+        height: 60px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div><input type="file" id="fileInput" accept=".xlsx, .xls"></div>
+        <div><button id="downloadButton" style="display:none;">Преобразовать</button></div>
+    </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
